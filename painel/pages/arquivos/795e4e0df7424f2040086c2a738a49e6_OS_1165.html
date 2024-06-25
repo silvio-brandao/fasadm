@@ -1,0 +1,307 @@
+
+
+<script>
+var numero = 910.70;
+//com R$
+var dinheiro = numero.toLocaleString("pt-br",{style: "currency", currency: "BRL"});
+
+
+ </script>
+
+<html moznomarginboxes mozdisallowselectionprint>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Portal | FAS</title>
+
+</head>
+<style type="text/css">
+
+td {
+	font-size: 13px;
+	font-family: Arial;
+}
+.pequeno {
+	font-size: 13px;
+	font-family: Arial;
+}
+
+
+.medio {
+	font-size: 14px;
+	font-family: Arial;
+}
+
+.grande {
+	font-size: 16px;
+	font-family: Arial;
+}
+@media print{
+    .divprint{
+		display:none;
+	}
+    
+}
+
+</style>
+
+
+<table style="width: 800px;" cellspacing="0"> 	
+  
+<tr> 
+	<td colspan="3"  style="border-bottom:1px solid #000;   vertical-align: top; border-top: 1px solid #000; border-left: 1px solid #000; ">
+		<img src="http://fasmanutencao.com.br/painel/images/logoRelatorio.jpg" style="width:220px;" /> 
+	</td>
+	<td colspan="3"  class="medio" style="border-left: 1px solid #000; border-bottom: 1px solid #000;  border-top: 1px solid #000; border-right: 1px solid #000; ">
+		<b>  FAS MANUTENÇÃO DE MÁQUINAS INJETORAS </b></br>
+		<b>CNPJ:</b> 23.112.594/0001-28 </br>
+		<b>IE:</b> 90702288-98 </br></br>
+		Avenida dos Estados, n°491, Água Verde, Curitiba-PR 80610-040</br></br>
+		<b>Contato: </br></b>(41) 9 9635-3853  - adm@fasmanutencao.com.br
+	</td>	
+	<td class="pequeno" style="  border-top: 1px solid #000;  border-bottom: 1px solid #000; border-right: 1px solid #000; " >
+		<b class="medio">RELATÓRIO DE ASSISTÊNCIA TÉCNICA </b>
+		<br><br>
+		<span  style="  margin-bottom: 10px;"><b>Nº</b><b><span style="    margin-left: 10px;  ">1165</span></b></span>
+		<br>
+		<div style="padding-top: 5px;">20/01/2022	</div>
+	</td>
+</tr>
+
+</table>
+
+
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr>
+	<td class="medio"><b>Cliente:</b></td>
+	<td>PLASTICOVILLE IND. COM. DE PRODUTOS PLÁSTICOS LTDA</td>
+	<td class="medio"><b>CNPJ/CPF:</b></td>
+	<td>86775343000143</td>
+	<td></td>
+</tr>
+<tr >
+	<td class="medio"><b>Cidade:</b></td>
+	<td>JOINVILLE</td>
+	<td class="medio" ><b>UF:</b></td>
+	<td>SC</td>
+	<td></td>
+</tr>
+<tr >
+	<td class="medio"><b>Máquina:</b></td>
+	<td>FCS FD 520 n2003 / Robô Injetora FCS N2002</td>	
+	<td class="medio"><b>Modelo:</b></td>
+	<td>FD 520</td>
+	<td></td>
+</tr>
+<tr>
+	<td class="medio"><b>Garantia:</b></td>
+	<td>N</td>	
+	<td class="medio"><b>Nº Máquina:</b></td>
+	<td>FD52003</td>
+	<td></td>	
+</tr>
+</table>
+
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr style="height: 100px;" >
+	<td style="width: 110px;" class="medio" ><b>Problemas:</b></td>
+	<td>
+		Alto ruído no motor <br />
+Velocidade baixa no eixo z do robô<br />
+
+	</td>
+	
+</tr>
+</table>
+
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td style="width: 110px;" class="medio" ><b>Solução:</b></td>
+	<td>
+		Checado parâmetros na soft-starter SSw03;<br />
+Checado tensões RST e estavam corretas;<br />
+Checado tensões UVW e estava corretas;<br />
+Checado corrente e medido uma corrente diferente entre as fases do motor: U 43,2A V35,7A W46,7A<br />
+<br />
+Ruído muito parecido com falta de fase ou troca de cabeamento ao ligar errado as bobinas do motor.<br />
+<br />
+OBS: Custos de viagem foram divididos com outro cliente.<br />
+<br />
+<br />
+Solução robô: foi checado a parametrização do inversor cfw500; <br />
+Alterado os valores de acc e dcc;<br />
+Realizado testes no multi-speed;<br />
+acertado as velocidades do multi-speed;<br />
+Foi conseguido acelerar o deslocamento do eixo z do robô de 8 hz para 18hz. <br />
+Problema se encontra no impacto e na descarga da tensão do banco IGBT, com isso gera o alarme; <br />
+<br />
+<br />
+Uma possível solução que encontrei, seria acrescentar mais dois sensores indutivos, aumentar as réguas de fixação para os sensores e acrescentar algumas configurações no inversor. <br />
+<br />
+Sobre o motor da 2003, o problema parece estar no balanceamento das bobinas, pois há uma diferença nas correntes sobre as fases, com isso o ruído está se dando na carga magnética sobre no indutor. <br />
+<br />
+Podemos levar uma soft-start para realizar um teste, mas nos parâmetros e ajustes a mesma estava ok.<br />
+<br />
+
+	</td>
+	
+</tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td  align=center class="medio" style="height: 35px;"><b>Horários do Serviço</b></td>	
+</tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; " class="medio" ><b>Data</b></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; " class="medio" ><b>Entrada</b></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; " class="medio" ><b>Saída</b></td>
+	<td style="  border-bottom: 1px solid #000; " class="medio" ><b>Intervalo</b></td>
+	
+</tr>
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "> <p> 20/01/2022 </td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; ">13:30</td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; ">18:00</td>
+	<td style="  border-bottom: 1px solid #000; "></td>
+	
+</tr>
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000; "></td>
+	
+</tr>
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000;  "></td>
+	
+</tr>
+
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000;  "></td>
+	
+</tr>
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000;  "></td>
+	
+</tr>
+
+
+<tr >
+	<td style="  border-right: 1px solid #000; "> <p> </td>
+	<td style="  border-right: 1px solid #000; "></td>
+	<td style="  border-right: 1px solid #000; "></td>
+	<td  "></td>
+	
+</tr>
+
+	
+</tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td  align=center class="medio" style="height: 35px;" ><b>Condição de Pagamento</b></td>	
+</tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+
+<tr >
+	<td align=center style="  border-bottom: 1px solid #000;  "></td>
+</tr>
+
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td  align=center class="medio" style="height: 35px;"> <b>Valores</b></td>	
+</tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td align=center style="  border-bottom: 1px solid #000; border-right: 1px solid #000; " class="medio" ><b>Total do Serviço R$:</b></td>	
+	<td align=center style="  border-bottom: 1px solid #000;  " class="medio" ><b>Km Rodados:</b></td>
+</tr>
+
+<tr >
+	<td align=center style="  border-right: 1px solid #000; " id="valorTotalFormatado"> <p><script>document.write(dinheiro)</script> </td>	
+	<td align=center >175</td>
+</tr>
+</table>
+<table >
+<tr><td></td></tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-top: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr> 
+	<td></br><p> </br> </td>
+	<td style="  border-bottom: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; " align=center> FERNANDO ALVES DOS SANTOS </td>
+	<td style="  border-bottom: 1px solid #000; "> <p> </td>
+	<td><p> </td>
+	<td style="  border-bottom: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; " align=center> PLASTICOVILLE IND. COM. DE PRODUTOS PLÁSTICOS LTDA / CHARLES / RODRIGO</td>
+	<td style="  border-bottom: 1px solid #000; "> <p> </td>
+	<td><p> </td>
+</tr>
+<tr> 
+	<td></br><p> </br></td>
+	<td > <p> </td>
+	<td align=center class="medio"> Técnico </td>
+	<td> <p> </td>
+
+	<td></br><p> </br></td>
+	<td > <p> </td>
+	<td align=center class="medio"> Cliente / Contato</td>
+	<td> <p> </td>
+	<td><p> </td>
+</tr>
+<tr style="height: 200px;"> 
+	<td>  <p> </td>
+	<td colspan="3" align=center>  <img src="http://fasmanutencao.com.br/painel/images/ass1.jpg" style="width:200px;" />  </td>
+	
+	<td>  <p> </td>
+	<td colspan="3" align=center> <img alt="Sem Assinatura" src="http://fasmanutencao.com.br/painel/pages/assinaturas/795e4e0df7424f2040086c2a738a49e6_OS_1165_202201202009.jpg" style="width:200px;" /> </td>
+</tr>
+<tr> 
+	<td></br><p> </br> </td>
+	<td style="  border-top: 1px solid #000; "> <p> </td>
+	<td style="  border-top: 1px solid #000; " align=center> Assinatura </td>
+	<td style="  border-top: 1px solid #000; "> <p> </td>
+	<td><p> </td>
+	<td style="  border-top: 1px solid #000; "> <p> </td>
+	<td style="  border-top: 1px solid #000; " align=center> Assinatura</td>
+	<td style="  border-top: 1px solid #000; "> <p> </td>
+	<td><p> </td>
+</tr>
+
+</table>
+
+</br></br>
+		<div class="divprint">
+			<input type="button" id="btnprint" name="btnprint" value="Imprimir/Salvar em PDF" onclick="window.print();"; /></br>
+			<span>Caso queira salvar em pdf, escolha a impressora PDF. </span></br>
+		</div>
+
+
+</body >
+
+
+
+
+</html> 
+
+
+<script>
+
+
+
+</script>

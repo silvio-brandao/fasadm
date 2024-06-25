@@ -1,0 +1,300 @@
+
+
+<script>
+var numero = 4050.00;
+//com R$
+var dinheiro = numero.toLocaleString("pt-br",{style: "currency", currency: "BRL"});
+
+
+ </script>
+
+<html moznomarginboxes mozdisallowselectionprint>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Portal | FAS</title>
+
+</head>
+<style type="text/css">
+
+td {
+	font-size: 13px;
+	font-family: Arial;
+}
+.pequeno {
+	font-size: 13px;
+	font-family: Arial;
+}
+
+
+.medio {
+	font-size: 14px;
+	font-family: Arial;
+}
+
+.grande {
+	font-size: 16px;
+	font-family: Arial;
+}
+@media print{
+    .divprint{
+		display:none;
+	}
+    
+}
+
+</style>
+
+
+<table style="width: 800px;" cellspacing="0"> 	
+  
+<tr> 
+	<td colspan="3"  style="border-bottom:1px solid #000;   vertical-align: top; border-top: 1px solid #000; border-left: 1px solid #000; ">
+		<img src="http://fasmanutencao.com.br/painel/images/logonovo.jpg" style="width:220px;" /> 
+	</td>
+	<td colspan="3"  class="medio" style="border-left: 1px solid #000; border-bottom: 1px solid #000;  border-top: 1px solid #000; border-right: 1px solid #000; ">
+		<b>  FAS MANUTENÇÃO DE MÁQUINAS INJETORAS LTDA. </b></br>
+		<b>CNPJ:</b> 23.112.594/0001-28 </br>
+		<b>IE:</b> 90702288-98 </br></br>
+		Avenida dos Estados, n°491, Água Verde, Curitiba-PR 80610-040</br></br>
+		<b>Contato: </br></b>(41) 9 9635-3853  - adm@fasmanutencao.com.br
+	</td>	
+	<td class="pequeno" style="  border-top: 1px solid #000;  border-bottom: 1px solid #000; border-right: 1px solid #000; " >
+		<b class="medio">RELATÓRIO DE ASSISTÊNCIA TÉCNICA </b>
+		<br><br>
+		<span  style="  margin-bottom: 10px;"><b>Nº</b><b><span style="    margin-left: 10px;  ">1159</span></b></span>
+		<br>
+		<div style="padding-top: 5px;">13/01/2022	</div>
+	</td>
+</tr>
+
+</table>
+
+
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr>
+	<td class="medio"><b>Cliente:</b></td>
+	<td>INDúSTRIA MECâNICA NTC LTDA FILIAL</td>
+	<td class="medio"><b>CNPJ/CPF:</b></td>
+	<td>92225259000310</td>
+	<td></td>
+</tr>
+<tr >
+	<td class="medio"><b>Cidade:</b></td>
+	<td>APARECIDA DO TABOADO</td>
+	<td class="medio" ><b>UF:</b></td>
+	<td>MS</td>
+	<td></td>
+</tr>
+<tr >
+	<td class="medio"><b>Máquina:</b></td>
+	<td>Pavan Zanetti n46</td>	
+	<td class="medio"><b>Modelo:</b></td>
+	<td>HXF 320</td>
+	<td></td>
+</tr>
+<tr>
+	<td class="medio"><b>Garantia:</b></td>
+	<td>N</td>	
+	<td class="medio"><b>Nº Máquina:</b></td>
+	<td>32006243</td>
+	<td></td>	
+</tr>
+</table>
+
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr style="height: 100px;" >
+	<td style="width: 110px;" class="medio" ><b>Problemas:</b></td>
+	<td>
+		Alarme na cartela de réguas;<br />
+Rampas de pressão e velocidade altas;<br />
+Inversor de frequência com min de 30hz a alterna para 65hz diretamente sem realizar modulação correta.<br />
+inversor de frequência com erros de parametrização<br />
+
+	</td>
+	
+</tr>
+</table>
+
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td style="width: 110px;" class="medio" ><b>Solução:</b></td>
+	<td>
+		realizado a programação no comando gefran para realizar as calibrações nas cartelas amplificadoras, mas ao tentar calibrar as cartelas, ao subir a tensão para o ajuste máximo 100% a cartela entrava em erro (luz vermelha ascendia) e com isso não conseguíamos fazer o ajuste necessário a máquina;<br />
+trocado a cartela RMA6 (entradas e saidas analógicas) e após isso demos continuidade as calibrações das cartelas amplificadoras;<br />
+checado rampa de pressão geral no comnado gefran;<br />
+checado rampa de vazão geral no comando gefran;<br />
+checado rampa de contra-pressão no comando gefran;<br />
+calibrado a cartela amplificadora de pressão (min de 0,017 mA e máx 0,504 mA - pressão máx em 148 bar)<br />
+tentado calibrar a cartela amplificadora de vazão mas a min não ultrapassava os 0,080 mA, devido a isso, trocamos e instalamos um cartela da Murr art. No. 28 501 e ajustado a vazão em: min com programação em 0% - 0,188 mA com 0 RPM - com programação em 25% - 35 RPM - com programação em 50% - 92 RPM e com programação em 100% - 166 RPM e corrente máx de 0,688 mA;<br />
+tentado calibrar a cartela amplificadora de contra-pressão, mas não conseguimos devido ao ajuste mínimo estabilizar em uma corrente constante devido a falha e não ajuste na corrente max, devido a isso, trocamos pela cartela de vazão que estava com o defeito de não ultrapassar a corrente mínima de 0,080mA e assim ajustamos a cartela na contra-pressão com calibração min 0,012mA com 0% e max de 0,480mA com programação de 50%;<br />
+resetado o inversor danfoos VLT ao processo de fábrica, setado e parametrizado o inversor, o fazendo modular de forma semelhante ao servo acionamento, com ajuste que variam de 0% - 150RPM a 100% - 1800 RPM;<br />
+calibrado e setado booster de torque e realizado o teste em 148 bar e o inversor aguentou a carga mantendo os 60HZ; <br />
+<br />
+OBS.: valor da cartela Murr art. No. 28 501 R$ 800,00 a base de troca pela cartela de contra-pressão;<br />
+           valor da cartela RMA6 gefran R$ 1.800,00 a base de troca pela a retirada com defeito; <br />
+           fonte chaveada 110-320 VAC para 24 VCC 6,3A R$200,00<br />
+<br />
+garantia em ambas as cartelas citadas acima de 6 meses ( 13/07/2022 )
+	</td>
+	
+</tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td  align=center class="medio" style="height: 35px;"><b>Horários do Serviço</b></td>	
+</tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; " class="medio" ><b>Data</b></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; " class="medio" ><b>Entrada</b></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; " class="medio" ><b>Saída</b></td>
+	<td style="  border-bottom: 1px solid #000; " class="medio" ><b>Intervalo</b></td>
+	
+</tr>
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "> <p> 12/01/2022 </td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; ">14:00</td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; ">00:30</td>
+	<td style="  border-bottom: 1px solid #000; ">00:30</td>
+	
+</tr>
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000; "></td>
+	
+</tr>
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000;  "></td>
+	
+</tr>
+
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000;  "></td>
+	
+</tr>
+<tr >
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000; border-right: 1px solid #000; "></td>
+	<td style="  border-bottom: 1px solid #000;  "></td>
+	
+</tr>
+
+
+<tr >
+	<td style="  border-right: 1px solid #000; "> <p> </td>
+	<td style="  border-right: 1px solid #000; "></td>
+	<td style="  border-right: 1px solid #000; "></td>
+	<td  "></td>
+	
+</tr>
+
+	
+</tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td  align=center class="medio" style="height: 35px;" ><b>Condição de Pagamento</b></td>	
+</tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+
+<tr >
+	<td align=center style="  border-bottom: 1px solid #000;  "></td>
+</tr>
+
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td  align=center class="medio" style="height: 35px;"> <b>Valores</b></td>	
+</tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr >
+	<td align=center style="  border-bottom: 1px solid #000; border-right: 1px solid #000; " class="medio" ><b>Total do Serviço R$:</b></td>	
+	<td align=center style="  border-bottom: 1px solid #000;  " class="medio" ><b>Km Rodados:</b></td>
+</tr>
+
+<tr >
+	<td align=center style="  border-right: 1px solid #000; " id="valorTotalFormatado"> <p><script>document.write(dinheiro)</script> </td>	
+	<td align=center ></td>
+</tr>
+</table>
+<table >
+<tr><td></td></tr>
+</table>
+<table  style="width: 800px;  border-bottom: 1px solid #000; border-top: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; "  cellspacing="0" > 
+<tr> 
+	<td></br><p> </br> </td>
+	<td style="  border-bottom: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; " align=center> FERNANDO ALVES DOS SANTOS </td>
+	<td style="  border-bottom: 1px solid #000; "> <p> </td>
+	<td><p> </td>
+	<td style="  border-bottom: 1px solid #000; "> <p> </td>
+	<td style="  border-bottom: 1px solid #000; " align=center> INDúSTRIA MECâNICA NTC LTDA FILIAL / FLAVIO / VAGNO</td>
+	<td style="  border-bottom: 1px solid #000; "> <p> </td>
+	<td><p> </td>
+</tr>
+<tr> 
+	<td></br><p> </br></td>
+	<td > <p> </td>
+	<td align=center class="medio"> Técnico </td>
+	<td> <p> </td>
+
+	<td></br><p> </br></td>
+	<td > <p> </td>
+	<td align=center class="medio"> Cliente / Contato</td>
+	<td> <p> </td>
+	<td><p> </td>
+</tr>
+<tr style="height: 200px;"> 
+	<td>  <p> </td>
+	<td colspan="3" align=center>  <img src="http://fasmanutencao.com.br/painel/images/ass1.jpg" style="width:200px;" />  </td>
+	
+	<td>  <p> </td>
+	<td colspan="3" align=center> <img alt="Sem Assinatura" src="http://fasmanutencao.com.br/painel/pages/assinaturas/9bd5b95580a51e354831ab6821302bb6_OS_1159_202201131308.jpg" style="width:200px;" /> </td>
+</tr>
+<tr> 
+	<td></br><p> </br> </td>
+	<td style="  border-top: 1px solid #000; "> <p> </td>
+	<td style="  border-top: 1px solid #000; " align=center> Assinatura </td>
+	<td style="  border-top: 1px solid #000; "> <p> </td>
+	<td><p> </td>
+	<td style="  border-top: 1px solid #000; "> <p> </td>
+	<td style="  border-top: 1px solid #000; " align=center> Assinatura</td>
+	<td style="  border-top: 1px solid #000; "> <p> </td>
+	<td><p> </td>
+</tr>
+
+</table>
+
+</br></br>
+		<div class="divprint">
+			<input type="button" id="btnprint" name="btnprint" value="Imprimir/Salvar em PDF" onclick="window.print();"; /></br>
+			<span>Caso queira salvar em pdf, escolha a impressora PDF. </span></br>
+		</div>
+
+
+</body >
+
+
+
+
+</html> 
+
+
+<script>
+
+
+
+</script>
